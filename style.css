@@ -1,0 +1,23 @@
+
+.game-container {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-template-rows: repeat(10, 1fr);
+
+	width: 300px;
+	height: 300px;
+	background: black;
+}
+
+.game-cell {
+	background: lightgray;
+	outline: 1px solid black;
+}
+
+.game-cell.occupied {
+	background: black;
+}
+
+.game-cell.occupied.head {
+	background: red;
+}
